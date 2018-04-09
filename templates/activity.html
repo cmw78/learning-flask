@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <main class="container signup-section">
+    <div class="section-content">
+      <h2>Add an Activity</h2>
+
+      <form method="POST" action="/homepage">
+        {{ form.hidden_tag() }}
+
+        <div class="form-group">
+          {{ form.name.label }}
+
+          {% if form.name.errors %}
+            {% for error in form.name.errors %}
+              <p class="error-message">{{ error }}</p>
+            {% endfor %}
+          {% endif %}
+
+          {{ form.name }}
+        </div>
+
+        <div class="form-group">
+          {{ form.address.label }}
+
+          {% if form.address.errors %}
+            {% for error in form.address.errors %}
+              <p class="error-message">{{ error }}</p>
+            {% endfor %}
+          {% endif %}
+
+          {{ form.address }}
+        </div>
+
+        <div class="form-group">
+          {{ form.description.label }}
+
+          {% if form.description.errors %}
+            {% for error in form.description.errors %}
+              <p class="error-message">{{ error }}</p>
+            {% endfor %}
+          {% endif %}
+
+          {{ form.description }}
+        </div>
+
+        <div class="form-group">
+          {{ form.age.label }}
+
+          {% if form.age.errors %}
+            {% for error in form.age.errors %}
+              <p class="error-message">{{ error }}</p>
+            {% endfor %}
+          {% endif %}
+
+          {{ form.age }}
+        </div>
+
+        <div class="form-group">
+          {{ form.fee.label }}
+
+          {% if form.fee.errors %}
+            {% for error in form.fee.errors %}
+              <p class="error-message">{{ error }}</p>
+            {% endfor %}
+          {% endif %}
+
+          {{ form.fee }}
+        </div>
+
+        {{ form.submit(class="btn-primary") }}
+      </form>
+    </div>
+  </main>
+{% endblock %}

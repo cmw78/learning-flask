@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+{% block heading %}Activity Information: {{activity.name}}{% endblock %}
+{% block content %}
+<p>Name: {{activity.name}}</p>
+<p>Location: {{activity.address}}</p>
+<p>Description: {{activity.description}}</p>
+<p>Recommended Age Group: {{activity.age}}</p>
+<p>Cost: {{activity.fee}}</p>
+<p> Category: {{activity.category}} </p>
+<a href = "{{activity.website}}"> Website </a>
+
+
+
+
+
+    
+{% endblock %}

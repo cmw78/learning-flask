@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+{% block heading %}All Activities{% endblock %}
+{% block content %}
+<h1> All Activities </h1>
+<ul>
+ 	{% for activity in activities %}
+  	<li><a href="{{url_for('see_activity', name=activity.name)}}"> {{activity.name}}</a></li>
+  	<p> </p>
+	{% endfor %}
+
+</ul>
+<hr/>
+
+{% endblock %}

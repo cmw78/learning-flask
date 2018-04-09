@@ -1,17 +1,33 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link href = 'http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet'>
-		<link href = "{{ url_for('static', filename ='css/main.css')}}" rel = "stylesheet">
-	</head>
-	<body>
-		<header>
-			<div class = "container">
-				<h1 class = "title"> Active Kids </h1>
-			</div>
-		</header>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet'>
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet" >
 
-		{% block content %}
-		{% endblock %}
-	</body>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="title">Active Kids</h1>
+      </div>
+    </header>
+    
+    {% block content %}
+    {% endblock %}
+    
+  </body>
+  <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAtNh3q-C8ontf1UY6-RiFWqojro2tEGts",
+    authDomain: "activity-finder-fcbc8.firebaseapp.com",
+    databaseURL: "https://activity-finder-fcbc8.firebaseio.com",
+    storageBucket: "activity-finder-fcbc8.appspot.com",
+    messagingSenderId: "900425927603"
+  };
+  firebase.initializeApp(config);
+</script>
 </html>

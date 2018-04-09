@@ -1,0 +1,284 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <main class="container signup-section">
+    <div class="section-content">
+      <h2>Add an Activity</h2>
+
+      <form method="POST" action="/add2">
+        {{ form.hidden_tag() }}
+
+        <div class="form-group">
+          {{ form.name.label }}
+
+          {% if form.name.errors %}
+            {% for error in form.name.errors %}
+              <p class="error-message">{{ error }}</p>
+            {% endfor %}
+          {% endif %}
+
+          {{ form.name }}
+        </div>
+
+        <div class="form-group">
+          {{ form.address.label }}
+
+          {% if form.address.errors %}
+            {% for error in form.address.errors %}
+              <p class="error-message">{{ error }}</p>
+            {% endfor %}
+          {% endif %}
+
+          {{ form.address }}
+        </div>
+
+        <div class="form-group">
+          {{ form.description.label }}
+
+          {% if form.description.errors %}
+            {% for error in form.description.errors %}
+              <p class="error-message">{{ error }}</p>
+            {% endfor %}
+          {% endif %}
+
+          {{ form.description }}
+        </div>
+<h2>Age</h2>
+        <div class="form-group">
+          {{ form.age1.label }}
+
+          {% if form.age1.errors %}
+            {% for error in form.age1.errors %}
+              <p class="error-message">{{ error }}</p>
+            {% endfor %}
+          {% endif %}
+
+          {{ form.age1 }}
+        </div>
+         <div class="form-group">
+          {{ form.age2.label }}
+
+          {% if form.age2.errors %}
+            {% for error in form.age2.errors %}
+              <p class="error-message">{{ error }}</p>
+            {% endfor %}
+          {% endif %}
+
+          {{ form.age2 }}
+        </div>
+        <div class="form-group">
+          {{ form.age3.label }}
+
+          {% if form.age3.errors %}
+            {% for error in form.age3.errors %}
+              <p class="error-message">{{ error }}</p>
+            {% endfor %}
+          {% endif %}
+
+          {{ form.age3 }}
+        </div>
+        <div class="form-group">
+          {{ form.age4.label }}
+
+          {% if form.age4.errors %}
+            {% for error in form.age4.errors %}
+              <p class="error-message">{{ error }}</p>
+            {% endfor %}
+          {% endif %}
+
+          {{ form.age4 }}
+        </div>
+        <div class="form-group">
+          {{ form.age5.label }}
+
+          {% if form.age5.errors %}
+            {% for error in form.age5.errors %}
+              <p class="error-message">{{ error }}</p>
+            {% endfor %}
+          {% endif %}
+
+          {{ form.age5 }}
+        </div>
+        <h2> Price </h2>
+        <div class="form-group">
+          {{ form.price1.label }}
+
+          {% if form.price1.errors %}
+            {% for error in form.price1.errors %}
+              <p class="error-message">{{ error }}</p>
+            {% endfor %}
+          {% endif %}
+
+          {{ form.price1 }}
+        </div>
+        <div class="form-group">
+          {{ form.price2.label }}
+
+          {% if form.price2.errors %}
+            {% for error in form.price2.errors %}
+              <p class="error-message">{{ error }}</p>
+            {% endfor %}
+          {% endif %}
+
+          {{ form.price2 }}
+        </div>
+        <h2> Category </h2>
+        <div class="form-group">
+          {{ form.cat1.label }} 
+
+          {% if form.cat1.errors %}
+            {% for error in form.cat1.errors %}
+              <p class="error-message">{{ error }}</p>
+            {% endfor %}
+          {% endif %}
+
+          {{ form.cat1 }} 
+        </div>
+        <div class="form-group">
+          {{ form.cat2.label }}
+
+          {% if form.cat2.errors %}
+            {% for error in form.cat2.errors %}
+              <p class="error-message">{{ error }}</p>
+            {% endfor %}
+          {% endif %}
+
+          {{ form.cat2 }}
+        </div>
+        <div class="form-group">
+          {{ form.cat3.label }}
+
+          {% if form.cat3.errors %}
+            {% for error in form.cat3.errors %}
+              <p class="error-message">{{ error }}</p>
+            {% endfor %}
+          {% endif %}
+
+          {{ form.cat3 }}
+        </div>
+        <div class="form-group">
+          {{ form.cat4.label }}
+
+          {% if form.cat4.errors %}
+            {% for error in form.cat4.errors %}
+              <p class="error-message">{{ error }}</p>
+            {% endfor %}
+          {% endif %}
+
+          {{ form.cat4 }}
+        </div>
+        <div class="form-group">
+          {{ form.cat5.label }}
+
+          {% if form.cat5.errors %}
+            {% for error in form.cat5.errors %}
+              <p class="error-message">{{ error }}</p>
+            {% endfor %}
+          {% endif %}
+
+          {{ form.cat5 }}
+        </div>
+        <div class="form-group">
+          {{ form.cat6.label }}
+
+          {% if form.cat6.errors %}
+            {% for error in form.cat6.errors %}
+              <p class="error-message">{{ error }}</p>
+            {% endfor %}
+          {% endif %}
+
+          {{ form.cat6 }}
+        </div>
+        <div class="form-group">
+          {{ form.cat7.label }}
+
+          {% if form.cat7.errors %}
+            {% for error in form.cat7.errors %}
+              <p class="error-message">{{ error }}</p>
+            {% endfor %}
+          {% endif %}
+
+          {{ form.cat7 }}
+        </div>
+        <div class="form-group">
+          {{ form.cat8.label }}
+
+          {% if form.cat8.errors %}
+            {% for error in form.cat8.errors %}
+              <p class="error-message">{{ error }}</p>
+            {% endfor %}
+          {% endif %}
+
+          {{ form.cat8 }}
+        </div>
+        <div class="form-group">
+          {{ form.cat9.label }}
+
+          {% if form.cat9.errors %}
+            {% for error in form.cat9.errors %}
+              <p class="error-message">{{ error }}</p>
+            {% endfor %}
+          {% endif %}
+
+          {{ form.cat9 }}
+        </div>
+        <div class="form-group">
+          {{ form.cat10.label }}
+
+          {% if form.cat10.errors %}
+            {% for error in form.cat10.errors %}
+              <p class="error-message">{{ error }}</p>
+            {% endfor %}
+          {% endif %}
+
+          {{ form.cat10 }}
+        </div>
+        <div class="form-group">
+          {{ form.cat11.label }}
+
+          {% if form.cat11.errors %}
+            {% for error in form.cat11.errors %}
+              <p class="error-message">{{ error }}</p>
+            {% endfor %}
+          {% endif %}
+
+          {{ form.cat11 }}
+        </div>
+        <div class="form-group">
+          {{ form.cat12.label }}
+
+          {% if form.cat12.errors %}
+            {% for error in form.cat12.errors %}
+              <p class="error-message">{{ error }}</p>
+            {% endfor %}
+          {% endif %}
+
+          {{ form.cat12 }}
+        </div>
+        <div class="form-group">
+          {{ form.cat13.label }}
+
+          {% if form.cat13.errors %}
+            {% for error in form.cat13.errors %}
+              <p class="error-message">{{ error }}</p>
+            {% endfor %}
+          {% endif %}
+
+          {{ form.cat13 }}
+        </div>
+        <div class="form-group">
+          {{ form.website.label }}
+
+          {% if form.website.errors %}
+            {% for error in form.website.errors %}
+              <p class="error-message">{{ error }}</p>
+            {% endfor %}
+          {% endif %}
+
+          {{ form.website }}
+        </div>
+        {{ form.submit(class="btn-primary") }}
+      </form>
+    </div>
+  </main>
+{% endblock %}
